@@ -1,5 +1,4 @@
 "use strict";
-
 var clients = require("../lib/index");
 var assert = require("chai").assert;
 var sinon = require("sinon");
@@ -84,8 +83,8 @@ describe("Tracking a registry:", function () {
             var actual = registry[0].timestamp;
             var expected = 100;
             assert.equal(actual, expected);
-            var actual = registry[1].timestamp;
-            var expected = 100;
+            actual = registry[1].timestamp;
+            expected = 100;
             assert.equal(actual, expected);
         });
     });
